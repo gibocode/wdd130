@@ -66,13 +66,13 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 58px;
+    top: 85px;
     left: 100px;
     color: #d6f1ff;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
