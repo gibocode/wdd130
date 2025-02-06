@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #00778e;
+    --secondary-color: #dbf9ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", Arial, serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #004856;
+}
+
+header {
+    margin: 0 auto;
+    width: 800px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--primary-color);
+    padding: 0.5rem 0;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 145, 173, 0.3);
+    border-radius: 0.5rem;
+    background-color: #f6fdfe;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    border: 1px solid rgba(0, 145, 173, 0.2);
+}
+
+legend {
+    padding: 0.5rem;
+    font-size: 1.3em;
+    color: var(--primary-color);
+}
+
+label, input, button, select, textarea {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+label[for="feedback"] {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+button {
+    margin: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+button:hover {
+    background-color: #006478;
+    cursor: pointer;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid rgba(0, 145, 173, 0.5);
+}
+
+footer p {
+    padding: 0.5rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
