@@ -125,6 +125,45 @@ main section p {
     border-radius: 10px;
 }
 
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 10px #cfcfcf;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.information > div {
+    padding: 20px 20px 20px 35px;
+    color: var(--secondary-color);
+}
+
+.information > div > div {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.information > div > div > div:first-child {
+    margin-right: 15px;
+}
+
+.information > div > div > div > div:first-child {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.information svg {
+    width: 30px;
+    color: var(--secondary-color);
+}
+
+.information iframe {
+    width: 100%;
+    min-height: 300px;
+    border: none;
+}
+
 .history img {
     width: 260px;
     height: auto;
@@ -139,7 +178,14 @@ main section p {
     padding: 20px;
 }
 
-.adventures figure {
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.adventures figure, .employees figure {
     padding: 10px;
     text-align: center;
     box-shadow: 0 0 10px #cfcfcf;
@@ -152,9 +198,94 @@ main section p {
     border-radius: 5px;
 }
 
+.employees img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .adventures figcaption {
     color: var(--secondary-color);
     font-size: 14px;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us > form {
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px #cfcfcf;
+    border-radius: 5px;
+    width: 600px;
+    color: var(--secondary-color);
+}
+
+input[type="text"], input[type="email"] {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #c3c5c5;
+    border-radius: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.form-items {
+    margin-bottom: 10px;
+}
+
+.form-items label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-items.form-inquiry label, .form-items.form-newsletter label {
+    display: inline;
+    margin-bottom: 0;
+}
+
+.form-inquiry > div, .form-newsletter > div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-inquiry {
+    margin-bottom: 20px;
+}
+
+.form-items p {
+    padding: 0;
+    margin: 30px 0 15px;
+}
+
+.form-items textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c3c5c5;
+    border-radius: 5px;
+}
+
+.contact-us-form button {
+    float: right;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.contact-us-form button:hover {
+    background-color: #566163;
+    cursor: pointer;
 }
 
 footer {
