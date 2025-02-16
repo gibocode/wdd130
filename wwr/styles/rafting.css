@@ -396,7 +396,7 @@ footer {
     margin: 20px;
     box-shadow: 0 0 10px #cfcfcf;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .offers1 img {
