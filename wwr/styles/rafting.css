@@ -395,11 +395,12 @@ footer {
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0 0 10px #cfcfcf;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .offers1 img {
-    min-width: 400px;
+    width: 400px;
     height: 100%;
     border-radius: 20px 0 0 20px;
 }
