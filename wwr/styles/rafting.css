@@ -424,8 +424,9 @@ footer {
 }
 
 .offers .purpose {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
     margin-bottom: 20px;
     padding: 0 20px;
 }
